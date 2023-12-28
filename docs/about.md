@@ -1,4 +1,4 @@
-# Linux
+# about
 
 - https://gitee.com/openeuler/RISC-V/blob/master/release/openEuler-23.03/Installation_Book/QEMU/README.md
 - This page demonstrates some of the built-in markdown extensions provided by VitePress.

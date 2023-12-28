@@ -1,26 +1,87 @@
----
-# https://vitepress.dev/reference/default-theme-home-page
-layout: home
+# 欢迎来到 openEuler RISC-V 百科
 
-hero:
-  name: "OERV Wiki"
-#  text: "openEuler RISC-V 百科"
-  tagline: 简洁、易用、全面
-  actions:
-    - theme: brand
-      text: 快速上手
-      link: /getting-started
-    - theme: alt
-      text: 在 Gitee 上查看
-      link: https://gitee.com/openeuler/RISC-V
+This page demonstrates some of the built-in markdown extensions provided by VitePress.
 
-# 首页下方产品特性区域，目前没有想到什么好写的，先不放
-#features:
-#  - title: Feature A
-#    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#  - title: Feature B
-#    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#  - title: Feature C
-#    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#---
+## Syntax Highlighting
 
+VitePress provides Syntax Highlighting powered by [Shikiji](https://github.com/antfu/shikiji), with additional features like line-highlighting:
+
+**Input**
+
+````md
+```js{4}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+````
+
+**Output**
+
+```js{4}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+
+## Custom Containers
+
+**Input**
+
+```md
+::: info
+This is an info box.
+:::
+
+::: tip
+This is a tip.
+:::
+
+::: warning
+This is a warning.
+:::
+
+::: danger
+This is a dangerous warning.
+:::
+
+::: details
+This is a details block.
+:::
+```
+
+**Output**
+
+::: info
+This is an info box.
+:::
+
+::: tip
+This is a tip.
+:::
+
+::: warning
+**前提条件**
+
+This is a warning.
+:::
+
+::: danger
+This is a dangerous warning.
+:::
+
+::: details
+This is a details block.
+:::
+
+## More
+
+Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).

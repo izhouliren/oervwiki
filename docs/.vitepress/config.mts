@@ -12,62 +12,47 @@ export default defineConfig({
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '首页', link: '/' },
-      { text: '文档', link: '/getting-started' },
-      { text: '文档',
-        items:[
-          { text: 'Linux', link: '/getting-started/linux' },
-          { text: 'macOS', link: '/getting-started/macos' }
-        ]
-      
-      }
+      { text: 'openEuler 22.03 LTS', link: '/getting-started' },
+      { text: '文档', link: '/' },
+      { text: 'Wiki', link: '/wiki/' },
+      { text: '关于', link: '/about' },
     ],
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © oervwiki'
     },
     editLink: {
-      // 需要请王经纬给一个 oerv github 的仓库地址
-      pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+      pattern: 'https://github.com/izhouliren/oervwiki/tree/master/docs/:path',
       text: 'Edit this page on GitHub'
     },
-    sidebar: [
-      {
-        text: '快速开始',
-        // docs：https://vitepress.dev/reference/default-theme-sidebar#collapsible-sidebar-groups
-        collapsed: false,
-        items: [
-          {
-            text: '在QEMU中安装',
-            items: [
-              { text: 'Linux', link: '/getting-started/linux' },
-              { text: 'macOS', link: '/getting-started/macos' }
-            ]
-          },
-          {
-            text: '在物理机中安装',
-            items: [
-              { text: '开发板1', link: '/api-examples' },
-              { text: '开发板2', link: '/api-examples' },
-              { text: '开发板3', link: '/api-examples' },
-              { text: '开发板4', link: '/api-examples' },
-              { text: '开发板5', link: '/api-examples' },
-            ]
-          },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      },
-      {
-        text: 'Examples2',
-        // docs：https://vitepress.dev/reference/default-theme-sidebar#collapsible-sidebar-groups
-        collapsed: false,
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    // sidebar: [
+    //   {
+    //     text: '快速开始',
+    //     // docs：https://vitepress.dev/reference/default-theme-sidebar#collapsible-sidebar-groups
+    //     collapsed: true,
+    //     items: [
+    //       { text: '在QEMU中安装',link: '/qemu_install' },
+    //       { text: '在物理机中安装',
+    //         collapsed:true,
+    //         items: [
+    //           {text:'LicheePi 4A',link:'/licheepi_4a'},
+    //           {text:'VisionFive 2',link:'/visionfive_2'},
+    //           {text:'Milk-V Pioneer Box',link:'/milk-v_pioneer_box'},
+    //         ]
+    //       },
+    //     ]
+    //   },
+    //   {
+    //     text: '参与贡献',
+    //     // docs：https://vitepress.dev/reference/default-theme-sidebar#collapsible-sidebar-groups
+    //     collapsed: true,
+    //     items: [
+    //       { text: '', link: '/markdown-examples' },
+    //     //  { text: 'Runtime API Examples', link: '/api-examples' },
+    //     //  { text: 'Runtime API Examples', link: '/api-examples' }
+    //     ]
+    //   }
+    // ],
 
     socialLinks: [
       { icon: 'github', link: 'https://gitee.com/openeuler/RISC-V' }
