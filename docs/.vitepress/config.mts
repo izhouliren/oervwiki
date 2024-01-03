@@ -31,17 +31,19 @@ export default defineConfig({
         items: [
           { text: '在QEMU中安装',
             items:[
-              {text:'Linux',link:'qemo_install/linux'},
-              {text:'macOS',link:'qemo_install/macos'},
+              {text:'Linux',link:'qemu_install/linux'},
+              {text:'macOS',link:'qemu_install/macos'},
             ]
           },
           { text: '在物理机中安装',
             collapsed:false,
             items: [
               {text:'LicheePi 4A',link:'devices/licheepi_4a'},
-              {text:'VisionFive 2',link:'devices/visionfive_2'},
+              {text:'Lichee RV',link:'devices/lichee_rv'},
               {text:'Milk-V Pioneer Box',link:'devices/milk-v_pioneer_box'},
-              {text:'全志D1哪吒',link:'devices/d1_nezha'},
+              {text:'Milk-V Mars',link:'devices/milk-v_mars'},
+              {text:'全志 D1-H 哪吒',link:'devices/d1-h_nezha'},
+              {text:'VisionFive 2',link:'devices/visionfive_2'},
             ]
           },
         ]
