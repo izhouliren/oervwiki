@@ -1,0 +1,1 @@
+# 在 Linux QEMU 中安装 openEuler RISC-V
