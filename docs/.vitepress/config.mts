@@ -80,7 +80,7 @@ export default defineConfig({
                       {text:'VNC 配置与使用',link:'robot/bestofpractice/02.md'},
                       {text:'用户创建和登入配置',link:'robot/bestofpractice/03.md'},
                       {text:'提交 issue',link:'robot/bestofpractice/04.md'},
-                      {text:'资源总汇',link:'robot/bestofpractice/05md'},
+                      {text:'资源总汇',link:'robot/bestofpractice/05.md'},
                      ]
                     },
                   ]
