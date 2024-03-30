@@ -66,7 +66,25 @@ export default defineConfig({
               {text:'机器人',
                collapsed:false,
                items:[
-                  {text:'ROS',link:'robot/ros'},
+                  {text:'ROS2',
+                  collapsed:false,
+                  items:[
+                    {text:'快速入门',link:'robot/quick_start'},
+                    {text:'如何安装',link:'robot/how_to_install'},
+                    {text:'常用命令',link:'robot/common_command'},
+                    {text:'编译环境安装与 service 通信',link:'robot/compiler_and_service'},
+                    {text:'最佳实践',
+                     collapsed:false,
+                     items:[
+                      {text:'多机通信实例',link:'robot/bestofpractice/01.md'},
+                      {text:'VNC 配置与使用',link:'robot/bestofpractice/02.md'},
+                      {text:'用户创建和登入配置',link:'robot/bestofpractice/03.md'},
+                      {text:'提交 issue',link:'robot/bestofpractice/04.md'},
+                      {text:'资源总汇',link:'robot/bestofpractice/05md'},
+                     ]
+                    },
+                  ]
+                  },
                 ]
               },
               {text:'边缘计算',link:'/milk-v_pioneer_box'},
